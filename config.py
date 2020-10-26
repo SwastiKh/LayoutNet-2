@@ -21,5 +21,5 @@ class Config(object):
         self.checkpoint_basename = kwargs.get("checkpoint_basename",
                                               "layout")
         self.filenamequeue = kwargs.get("filenamequeue", os.path.join(self.data_dir, "dataset","layout_1205.tfrecords"))
-        self.min_after_dequeue = kwargs.get("min_after_dequeue", 5000)
+        self.min_after_dequeue = kwargs.get("min_after_dequeue", 500)
         self.num_threads = kwargs.get("num_threads", 4)
