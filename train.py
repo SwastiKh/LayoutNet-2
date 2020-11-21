@@ -10,7 +10,7 @@ session = InteractiveSession(config=config)
 
 
 def main():
-    cfg = config.Config(filenamequeue="drive/My Drive/LayoutNet/dataset/layout_1205.tfrecords")
+    cfg = config.Config(filenamequeue="../data/dataset/layout_1205.tfrecords")
     t = trainer_step.Trainer(cfg)
     t.fit()
 
